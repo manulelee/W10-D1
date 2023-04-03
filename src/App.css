@@ -1,0 +1,35 @@
+.navLogo {
+  width: 100px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.card img {
+  margin: 0 auto;
+  width: 70%;
+  aspect-ratio: 2/3;
+}
+
+div.card {
+  height: 590px;
+  margin-top: 1em;
+  position: relative;
+}
+div.card button {
+  position: absolute;
+  bottom: 1em;
+}
+.footer ul {
+  list-style: none;
+}
+
+body {
+  background-color: black;
+}
+
+.selectedElement {
+  border: 2px solid red !important;
+}
