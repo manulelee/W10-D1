@@ -2,6 +2,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Component } from "react";
+import CommentArea from "./CommentArea";
 
 class SingleBook extends Component {
   state = {
@@ -10,7 +11,7 @@ class SingleBook extends Component {
 
   isSelected = (e) => {
     this.setState({ selected: !this.state.selected });
-    console.log(e.target);
+    //console.log(e.target);
   };
 
   render() {
@@ -29,6 +30,7 @@ class SingleBook extends Component {
               <br />
             </Card.Text>
             <Button variant="primary">Add to cart</Button>
+            {this.state.selected && <CommentArea asin={this.props.myBook.asin} />}
           </Card.Body>
         </Card>
       </Col>
