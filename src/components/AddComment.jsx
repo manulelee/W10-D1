@@ -45,6 +45,8 @@ class AddComment extends Component {
           <Form.Control
             type="number"
             placeholder="Enter rating"
+            min="1"
+            max="5"
             value={this.state.review.rate}
             onChange={(e) => {
               this.setState({
