@@ -1,6 +1,6 @@
 import { Component } from "react";
 import CommentList from "./CommentList";
-
+import AddComment from "./AddComment";
 class CommentArea extends Component {
   state = {
     reviews: [],
@@ -33,10 +33,10 @@ class CommentArea extends Component {
   render() {
     return (
       <>
-        {" "}
         <div className="comments">
           <h5>Recensioni ({this.state.reviews.length}):</h5>
           <CommentList reviews={this.state.reviews} />
+          <AddComment asin={this.props.asin} />
         </div>
       </>
     );
