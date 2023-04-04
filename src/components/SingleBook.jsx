@@ -18,8 +18,8 @@ class SingleBook extends Component {
     let cardClass = this.state.selected ? "selectedElement" : "";
     return (
       <Col xs={6} md={4} lg={3}>
-        <Card className={cardClass} onClick={this.isSelected}>
-          <Card.Img variant="top" src={this.props.myBook.img} />
+        <Card className={cardClass}>
+          <Card.Img variant="top" src={this.props.myBook.img} onClick={this.isSelected} />
           <Card.Body>
             <Card.Title>{this.props.myBook.title}</Card.Title>
             <Card.Text>
